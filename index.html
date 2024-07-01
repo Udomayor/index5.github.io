@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Simple form </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+          <form>
+              <label> Gramms</label> <input type="number" id="gramms"> <br>
+              <button type="button" onclick="conversion()"> Convert</button>
+          </form>
+            <p id="convert"></p>
+
+            <form>
+                <label> Amount</label> <input type="number" id="amount"> <br> <br>
+
+                <label> Rate</label> <input type="number" id="Rate"> <br> <br>
+
+                <button type="button" onclick="interest()"> calculate</button>
+            </form>
+
+            <p id="interest"> </p>
+
+            <script>
+//                 function calculate(){
+//                var item1= parseFloat(document.getElementById('item1').value);
+
+//               var item2= parseFloat(document.getElementById('item2').value);
+
+//                var sum= item1 + item2 ;
+
+//              document.getElementById ("result").innerText = 'sum: ' + sum;
+// }
+            // function conversion(){
+            //     var gramms = parseFloat(document.getElementById('gramms').value);
+
+            //     var kilogram = gramms/1000;
+
+            //     document.getElementById ("convert").innerText = 'kilogram: ' + kilogram;
+            // }
+
+            function interest(){
+                var Amount = parseFloat(document.getElementById ('amount').value);
+
+                var Rate = parseFloat(document.getElementById ('Rate').value);
+
+                var interest = Amount/Rate;
+
+                document.getElementById ("interest") .innerText = 'Interest = ' + interest;
+            }
+
+           </script>
+    </body>
+    
+</html>
